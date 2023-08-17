@@ -37,15 +37,15 @@
         <h1 class="text-4xl font-medium text-center rounded-b-lg py-4 bg-rose-300 mb-9">Parsonal Management <span>Bank</span></h1>
        <div class=" grid grid-cols-3 gap-5 p-2 ">
         <div class="bg-amber-400 h-28 rounded-lg p-2">
-            <h2 class="text-2xl">Deposit</h2>
-            <h3 class="text-3xl font-normal">$00</h3>
+            <h2  class="text-2xl">Deposit</h2>
+            <h3  class="text-3xl font-normal">$<span id="Deposit-display">00</span></h3>
         </div>
         <div class="bg-lime-500 h-28 rounded-lg p-2">
-            <h2 class="text-2xl">WthDraw</h2>
+            <h2 id="Withdraw-display" class="text-2xl">WthDraw</h2>
             <h3 class="text-3xl font-normal">$00</h3>
         </div>
         <div class="bg-blue-400 h-28 rounded-lg p-2">
-            <h2 class="text-2xl">Balance</h2>
+            <h2 id="balance-display" class="text-2xl">Balance</h2>
             <h3 class="text-3xl font-normal">$1220</h3>
         </div>
        </div>
@@ -54,13 +54,13 @@
         <div class="grid grid-cols-2 gap-5">
             <div class="bg-purple-500 rounded-lg p-2">
                 <h2 class="text-2xl font-medium my-2">Please Deposit</h2>
-                <input type="text" placeholder="Please enter amount $" class=" my-2 input-res  "> <br>
-                <button class="btn btn-success">Deposit</button>
+                <input id="get-deposit" type="number" placeholder="Please enter amount $" class=" my-2 input-res  "> <br>
+                <button id="deposit-btn" class="btn btn-success">Deposit</button>
             </div>
             <div class="bg-emerald-600 rounded-lg p-2">
                 <h2 class="text-2xl font-medium my-2">Please WithDraw</h2>
-                <input type="text" placeholder="Please enter amount $"  class="input-res my-2"> <br>
-                <button class=" btn btn-error">Withdraw</button>
+                <input id="get-withdraw" type="text" placeholder="Please enter amount $"  class="input-res my-2"> <br>
+                <button id="withDraw-btn" class=" btn btn-error">Withdraw</button>
             </div>
         </div>
     </section>
@@ -70,5 +70,6 @@
         <p class="mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, dolore minima blanditiis libero quibusdam deserunt. Error, pariatur iste odio incidunt similique exercitationem iusto maiores molestias eum animi rerum? Voluptates, non.</p>
        </div>
     </section>
+   <script src="home.js"></script>
 </body>
 </html>
