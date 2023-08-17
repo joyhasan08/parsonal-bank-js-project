@@ -7,6 +7,28 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script> 
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+    .input-res
+    {
+     -webkit-appearance: none;
+     -moz-appearance: none;
+     appearance: none;
+     font: 15px/1 'Open Sans', sans-serif;
+     color: #333;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     width: 100%;
+     max-width: 500px;
+     background-color: #ddd;
+     border: none;
+     padding: 10px 11px 11px 11px;
+     border-radius: 3px;
+     box-shadow: none;
+     outline: none;
+     margin: 0;
+    box-sizing: border-box; 
+    }
+    </style>
 
 
 </head>
@@ -32,12 +54,12 @@
         <div class="grid grid-cols-2 gap-5">
             <div class="bg-purple-500 rounded-lg p-2">
                 <h2 class="text-2xl font-medium my-2">Please Deposit</h2>
-                <input type="text" class="my-2 rounded-sm  "> <br>
+                <input type="text" placeholder="Please enter amount $" class=" my-2 input-res  "> <br>
                 <button class="btn btn-success">Deposit</button>
             </div>
             <div class="bg-emerald-600 rounded-lg p-2">
                 <h2 class="text-2xl font-medium my-2">Please WithDraw</h2>
-                <input type="text" class="rounded-sm my-2"> <br>
+                <input type="text" placeholder="Please enter amount $"  class="input-res my-2"> <br>
                 <button class=" btn btn-error">Withdraw</button>
             </div>
         </div>
