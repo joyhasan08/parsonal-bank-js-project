@@ -1,6 +1,6 @@
 
 //verible declar part
- 
+let totalBalance = 0;
 //  let Total = totalOfDeposit.toString;
 
 document.getElementById('deposit-btn').addEventListener('click',function(){
@@ -17,12 +17,24 @@ document.getElementById('deposit-btn').addEventListener('click',function(){
 
     // total blalance part 
     let previousBalance = parseInt(document.getElementById('balance-display').innerText) 
-    let totalBalance = 0;
+   
     totalBalance = previousBalance + intOfDeposit;
 
     document.getElementById('balance-display').innerText = totalBalance;
 
 })
 
+    //withDraw option
+    document.getElementById('withDraw-btn').addEventListener('click',function(){
+            const getWithDrawValue = parseFloat(document.getElementById('get-withDraw').value);
+            
+            document.getElementById('get-withDraw').value = '';
+            console.log(getWithDrawValue);
+            document.getElementById('Withdraw-display').innerText = parseFloat(getWithDrawValue);
+            let previousBalance = parseInt(document.getElementById('balance-display').innerText) 
+            totalBalance = previousBalance - getWithDrawValue;
+            document.getElementById('balance-display').innerText = totalBalance;
+            
+    })
 
 
