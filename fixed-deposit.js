@@ -15,4 +15,5 @@ document.getElementById('fix-btn').addEventListener('click', function(){
     interst = (20 * fixedDeposit )/100;
 
     document.getElementById('fixed-display').innerText = interst  ;
+    
 })
