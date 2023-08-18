@@ -1,8 +1,8 @@
 // utilits fuction
 function getInputValueById(filedId){
     let inputFiledValueInt = document.getElementById(filedId).value;
+    document.getElementById(filedId).value = '';
     let inputFiledValueIntNEW = parseInt(inputFiledValueInt);
-    inputFiledValueInt = ''
     return inputFiledValueIntNEW 
 }
 
